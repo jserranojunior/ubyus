@@ -1,0 +1,29 @@
+{
+  "name": "slifer",
+  "version": "0.0.22",
+  "main": "src/modules/slifer/index.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "babel-jest": "^27.3.1",
+    "daisyui": "^1.16.5",
+    "element-plus": "*",
+    "swiper": "^7.3.2",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "autoprefixer": "^9.8.6",
+    "jest": "^27.3.1",
+    "postcss": "^8.2.9",
+    "tailwindcss": "^2.0.4",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  }
+}

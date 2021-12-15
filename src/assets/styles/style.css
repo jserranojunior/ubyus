@@ -1,22 +1,29 @@
-body {
+/* body {
   font-family: "Open Sans", sans-serif;
   margin: 0%;
-}
-h1 {
+} */
+/* h1 {
   color: #fb5404;
   font-size: 350%;
   text-align: center;
 }
+
+p {
+  font-size: 18px;
+} */
+
 a {
   text-decoration: none;
   color: #868482de;
 }
-p {
-  font-size: 18px;
+a:hover{
+  color: #fb5404
 }
-
 .painelvideoDiv {
-  background-color: rgba(206, 204, 204, 0.966);
+  border-top: 1px black;
+    background-color: #fff;
+
+  /* background-color: rgba(206, 204, 204, 0.966); */
 }
 
 .text-apre {
@@ -27,6 +34,7 @@ p {
   padding: 10px;
   text-align: justify;
   font-size: 18px;
+  color: #252525
 }
 .img-apre {
   margin: 10px auto;
@@ -69,8 +77,6 @@ p {
 }
 
 .slogan {
-  padding: 20px;
-  margin: 60px;
   text-align: center;
 }
 .cx-form {
@@ -111,9 +117,42 @@ textarea {
 }
 .flex {
   display: flex;
-  gap: 20px;
-  margin: 40px;
   flex-wrap: wrap;
+}
+
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.py-30{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.px-10{
+  padding-left:10px;
+  padding-right: 10px;
+}
+
+.px-20{
+  padding-left:20px;
+  padding-right: 20px;
+}
+.px-40{
+  padding-left:40px;
+  padding-right: 40px;
+}
+.px-50{
+  padding-left:50px;
+  padding-right: 50px;
+}
+.px-60{
+  padding-left:60px;
+  padding-right: 60px;
 }
 
 .boldwhite {
@@ -133,3 +172,12 @@ textarea {
 .english {
   display: none;
 }
+
+.justify-between{
+  justify-content: space-between;
+}
+
+video::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+

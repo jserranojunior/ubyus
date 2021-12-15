@@ -1,0 +1,46 @@
+
+
+  .table {
+    @apply table-auto w-full min-w-full text-sm;
+  }
+ 
+  .table > tbody > tr,
+  .table > thead > tr {
+    @apply border-b dark:border-gray-500 my-1 px-1 py-1;
+  }
+
+  .table > tbody > tr > td,
+  .table > thead > tr > td,
+  .table > thead > tr > th{
+    @apply px-1 py-1 bg-white text-black dark:bg-gray-700 dark:text-gray-100;
+  }
+
+  .table > tbody > tr:hover {
+    @apply bg-blue-200 cursor-pointer;
+  }
+
+  .table-border-r > thead > tr > th,
+  .table-border-r > tbody > tr > td {
+    @apply border-r dark:border-gray-500;
+  }
+
+  .table-striped-tail > tbody > tr:nth-child(odd) {
+    @apply bg-blue-100;
+  }
+  .table-bordered-tail,
+  .table-bordered-tail > thead > tr,
+  .table-bordered-tail > tbody > tr,
+  .table-bordered-tail > thead > tr > th,
+  .table-bordered-tail > tbody > tr > td {
+    @apply border  border-gray-300 dark:border-gray-500;
+  }
+  
+  .table-bordered > tbody > tr.trcolor > td {
+  background-color: white;
+  border-bottom: 1px solid white !important;
+  border-right: 1px solid white !important;
+}
+
+.table-striped tbody tr:nth-of-type(2n + 1) {
+  background-color: rgba(0, 0, 0, 0.11);
+}
