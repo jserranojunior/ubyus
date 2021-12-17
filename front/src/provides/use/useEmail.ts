@@ -12,7 +12,7 @@ export const useEmail = () => {
 
   async function sendEmail() {
     state.statusSendmail = "enviandoEmail";
-    const url = `http://ubyus.localhost/back?name=${state.inputsEmail.name}&email=${state.inputsEmail.email}&message=${state.inputsEmail.message}`;
+    const url = `https://ubyus.alvitre.com.br/back?name=${state.inputsEmail.name}&email=${state.inputsEmail.email}&message=${state.inputsEmail.message}`;
 
     axios
       .get(url)
