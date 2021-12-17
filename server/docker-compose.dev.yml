@@ -5,12 +5,12 @@ networks:
     external: true
 
 services:
-  phpmyadmin:
+  frontubyus:
     image: php:5.6-apache
     container_name: php
     restart: always
     ports:
-      - "85:80"
+      - "807:80"
     networks:
       - stack_ponte
     volumes:
