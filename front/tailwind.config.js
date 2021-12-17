@@ -1,4 +1,5 @@
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
@@ -160,12 +161,13 @@ module.exports = {
 
       yellow: colors.yellow,
     },
-    // screens: {
-    //   sm: { min: "640px", max: "767px" },
-    //   md: { min: "768px", max: "1023px" },
-    //   lg: { min: "1024px", max: "1279px" },
-    //   xl: { min: "1280px" },
-    // },
+
+    screens: {
+      tab: "576px",
+      lap: "1024px",
+      des: "1900px",
+      ...defaultTheme.screens,
+    },
     extend: {},
   },
   variants: {

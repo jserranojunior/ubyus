@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <div class="flex px-20 py-3 justify-between border-b border-gray-100 text-gray-400">
+  <div class>
+    <div
+      class="flex lap:px-20 des:px-60 py-3 justify-between border-b border-gray-100 text-gray-400"
+    >
       <div>
         <a href="/">
           <img src="@/assets/img/ubyus.png" alt="ubyus" width="200" />
@@ -9,15 +11,22 @@
 
       <Menu />
     </div>
-    <div class="painelvideoDiv border border-gray-100 bg-gray-50">
-      <div class="flex center">
-        <img
-          v-if="lang == 'portugues'"
-          src="@/assets/video/ubyus-portugues.gif"
-          alt="ubyus"
-          width="500"
-        />
-        <img v-else src="@/assets/video/ubyus-english.gif" alt="ubyus" width="500" />
+    <div class="painelvideoDiv border border-gray-100 bg-gray-50 lap:px-20 des:px-60">
+      <div class="flex justify-center center">
+        <div class>
+          <img
+            v-if="lang == 'portugues'"
+            src="@/assets/video/ubyus-portugues.gif"
+            alt="ubyus"
+            class="mx-auto w-full tab:w-full lap:w-1/2 des:w-full"
+          />
+          <img
+            v-else
+            src="@/assets/video/ubyus-english.gif"
+            alt="ubyus"
+            class="mx-auto w-full tab:w-full lap:w-1/2 des:w-full"
+          />
+        </div>
       </div>
     </div>
 
@@ -26,13 +35,15 @@
         @change="viewHandler"
         :tag="'h2'"
         id="titleoquenosmove"
-        :class="`text-4xl text-center titulo-section text-whitetheme-50 font-bold my-10 ${titlesVisibles['titleoquenosmove']}`"
+        :class="`text-2xl tab:text-4xl text-center titulo-section text-whitetheme-50 font-bold my-10 ${titlesVisibles['titleoquenosmove']}`"
       >
         <span v-if="lang == 'portugues'">O que nos move</span>
         <span v-else>What Move Us</span>
       </Waypoint>
-      <div class="flex flex-wrap center px-20 py-5 justify-between">
-        <div class="w-1/2 text-justify px-10">
+      <div class="flex flex-wrap center px-4 tab:px-20 des:px-60 py-5 justify-between">
+        <div
+          class="w-full lap:w-1/2 des:w-1/2 tab:1/2 text-justify px-4 tab:px-10 des:px-40 des:text-xl"
+        >
           <p v-if="lang == 'portugues'">
             UbyUS expressa o princípio de REPRESENTATIVIDADE, materializado por relações sinceras, profissionais e
             perenes com nossos clientes.
@@ -56,19 +67,19 @@
             plural, inclusive and human world.
           </p>
         </div>
-        <div class="w-1/2 ml-auto px-20">
+        <div class="w-full tab:w-full lap:w-1/2 des:w-1/2 mt-2 ml-auto px-4 tab:px-20 des:px-60">
           <img class="w-full" src="@/assets/img/imagem-equipe.jpg" />
         </div>
       </div>
     </section>
     <!--   -->
     <section id="oqueentregamos">
-      <div class="bg-gray-50 p-5">
+      <div class="bg-gray-50 p-5 des:px-60">
         <Waypoint
           @change="viewHandler"
           :tag="'h2'"
           id="titleoqueentregamos"
-          :class="`text-4xl text-center titulo-section text-whitetheme-50 font-bold my-10 ${titlesVisibles['titleoqueentregamos']}`"
+          :class="`text-2xl tab:text-4xl text-center titulo-section text-whitetheme-50 font-bold my-10 ${titlesVisibles['titleoqueentregamos']}`"
         >
           <span v-if="lang == 'portugues'">O que entregamos</span>
           <span v-else>What we deliver</span>
@@ -95,20 +106,23 @@
           @change="viewHandler"
           :tag="'h2'"
           id="titlecentrosexcelencia"
-          :class="`text-4xl text-center titulo-section text-whitetheme-50 font-bold my-10 ${titlesVisibles['titlecentrosexcelencia']}`"
+          :class="`text-2xl tab:text-4xl text-center titulo-section text-whitetheme-50 font-bold my-10 ${titlesVisibles['titlecentrosexcelencia']}`"
         >
           <span v-if="lang == 'portugues'">Centros de excelência</span>
           <span v-else>Centers of Excellence</span>
         </Waypoint>
 
         <div class="flex center">
-          <div class="f-margin">
+          <div
+            class="w-full text-center lap:text-left tab:w-full des:w-1/3 lap:w-1/2 px-4 tab:px-20 des:px-60"
+          >
             <a href="#">
               <img
                 v-if="lang == 'portugues'"
                 src="@/assets/img/negocios.png"
                 alt="negocios"
                 width="170"
+                class="tab:mx-auto"
               />
               <img v-else src="@/assets/img/english/businessboton.png" alt="negocios" width="170" />
             </a>
@@ -161,12 +175,15 @@
             </p>
           </div>
 
-          <div class="f-margin">
+          <div
+            class="w-full text-center lap:text-left tab:w-full des:w-1/3 lap:w-1/2 px-4 tab:px-20 des:px-60"
+          >
             <a href="#">
               <img
                 v-if="lang == 'portugues'"
                 src="@/assets/img/governanca.png"
                 alt="governanca"
+                class="tab:mx-auto"
                 width="210"
               />
               <img v-else src="@/assets/img/english/governance.png" alt="governanca" width="210" />
@@ -193,12 +210,15 @@
             </p>
           </div>
 
-          <div class="f-margin">
+          <div
+            class="w-full text-center lap:text-left tab:w-full des:w-1/3 lap:w-1/2 px-4 tab:px-20 des:px-60"
+          >
             <a href="#">
               <img
                 v-if="lang == 'portugues'"
                 src="@/assets/img/pessoas.png"
                 alt="pessoas"
+                class="mx-auto"
                 width="160"
               />
               <img v-else src="@/assets/img/english/people.png" alt="pessoas" width="160" />
@@ -234,13 +254,13 @@
           @change="viewHandler"
           :tag="'h2'"
           id="titlenossascompetencias"
-          :class="`text-4xl text-center titulo-section text-whitetheme-50 font-bold my-10 ${titlesVisibles['titlenossascompetencias']}`"
+          :class="`text-2xl tab:text-4xl text-center titulo-section text-whitetheme-50 font-bold my-10 ${titlesVisibles['titlenossascompetencias']}`"
         >
           <span v-if="lang == 'portugues'">Nossas competências</span>
           <span v-else>Our Skills</span>
         </Waypoint>
 
-        <div class="flex px-40 my-20">
+        <div class="flex px-2 tab:px-10 lap:px-40 des:px-80 my-20">
           <swiper
             :slidesPerView="4"
             :spaceBetween="15"
@@ -300,7 +320,7 @@
           </swiper>
         </div>
 
-        <div class="rodape center px-28 mt-10">
+        <div class="rodape center px-28 des:px-60 des:text-xl mt-10">
           <ul class="flex text-center justify-center">
             <li v-if="lang == 'portugues'" class="mx-1">• Experiência</li>
             <li class="mx-1" v-else>• Experience</li>
@@ -343,7 +363,7 @@
           </ul>
         </div>
 
-        <div class="rodape2 px-20 mb-10">
+        <div class="rodape2 px-20 des:px-60 des:text-xl mb-10">
           <p v-if="lang == 'portugues'">
             Na UbyUS Advisors reunimos as diferentes competências obtidas ao longo de nossas histórias e as aplicamos em
             nossas soluções. Contudo, muito além das nossas histórias, habilidades e competências, o que nos importa é
@@ -367,35 +387,35 @@
           @change="viewHandler"
           :tag="'h2'"
           id="titlequemsomos"
-          :class="`text-4xl text-center titulo-section text-whitetheme-50 font-bold my-10 ${titlesVisibles['titlequemsomos']}`"
+          :class="`text-2xl tab:text-4xl text-center titulo-section text-whitetheme-50 font-bold my-10 ${titlesVisibles['titlequemsomos']}`"
         >
           <span v-if="lang == 'portugues'">Quem Somos</span>
           <span v-else>Who We Are</span>
         </Waypoint>
 
-        <div class="flex justify-between px-56">
-          <div class="text-center">
-            <div>
+        <div class="flex justify-center tab:justify-between px-2 tab:px-56 des:px-96 des:text-xl">
+          <div class="text-center mb-4 w-full des:w-1/3">
+            <div class>
               <a href="#">
-                <img src="@/assets/img/Joao.png" alt="João" width="250px" />
+                <img class="mx-auto" src="@/assets/img/Joao.png" alt="João" width="250px" />
               </a>
             </div>
             <span class="text-xl text-gray-600 font-bold">João Rached</span>
           </div>
 
-          <div class="text-center">
-            <div>
+          <div class="text-center mb-4 w-full des:w-1/3">
+            <div class>
               <a href="#">
-                <img src="@/assets/img/eduardo.png" alt="Eduardo" width="230px" />
+                <img class="mx-auto" src="@/assets/img/eduardo.png" alt="Eduardo" width="230px" />
               </a>
             </div>
             <span class="text-xl text-gray-600 font-bold">Eduardo Beadle</span>
           </div>
 
-          <div class="text-center">
-            <div>
+          <div class="text-center mb-4 w-full des:w-1/3">
+            <div class>
               <a href="#">
-                <img src="@/assets/img/Nilton.png" alt="Nilton" width="225px" />
+                <img class="mx-auto" src="@/assets/img/Nilton.png" alt="Nilton" width="225px" />
               </a>
             </div>
             <span class="text-xl text-gray-600 font-bold">Nilton Junior</span>
@@ -416,14 +436,14 @@
           @change="viewHandler"
           :tag="'h2'"
           id="contato"
-          :class="`text-4xl text-center titulo-section text-whitetheme-50 font-bold my-10 ${titlesVisibles['contato']}`"
+          :class="`text-2xl tab:text-4xl text-center titulo-section text-whitetheme-50 font-bold my-10 ${titlesVisibles['contato']}`"
         >
           <span v-if="lang == 'portugues'">Contato</span>
           <span v-else>Contact</span>
         </Waypoint>
 
         <div class="cx-form flex justify-center">
-          <div class="w-1/3">
+          <div class="w-full tab:w-full lap:w-1/3 tab-1/3 tab:px-20">
             <div class="flex">
               <label for="nome" class="label-tail text-left">
                 <span v-if="lang == 'portugues'">Nome</span>
@@ -530,9 +550,9 @@
       </div>
     </div>
 
-    <div class="bg-gray-600 py-5 text-white px-20">
+    <div class="bg-gray-600 py-5 text-white px-4 tab:px-20">
       <div class="flex justify-between my-5">
-        <div class="w-1/3 text-center">
+        <div class="w-full lap:w-1/3 text-center">
           <p>
             Avenida Dr. Chucri Zaidan, 1550 – cj. 1508
             <br />Vila São Francisco – São Paulo / SP
@@ -540,14 +560,14 @@
           </p>
         </div>
 
-        <div class="w-1/3 text-center">
+        <div class="w-full lap:w-1/3 text-center">
           <p>
             <a href="mailto:contato@ubyusadvisors.com">
               <span class="boldwhite">contato@ubyusadvisors.com</span>
             </a>
           </p>
         </div>
-        <div class="w-1/3 text-center">
+        <div class="w-full lap:w-1/3 text-center">
           <p>São Paulo / SP – Brasil</p>
         </div>
       </div>
