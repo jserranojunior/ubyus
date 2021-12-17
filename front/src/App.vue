@@ -2,9 +2,13 @@
   <router-view></router-view>
 </template>
 
-<script>
+<script lang="ts">
+import { Provides } from "./provides/index";
+
 export default {
-  name: "App",
+  setup() {
+    Provides();
+  },
 };
 </script>
 <style>

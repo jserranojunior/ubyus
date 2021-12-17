@@ -8,12 +8,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "babel-jest": "^27.3.1",
     "daisyui": "^1.16.5",
     "element-plus": "*",
     "swiper": "^7.3.2",
-    "vue": "^3.2.25",
-    "vue-router": "^4.0.3"
+    "vue": "^3.2.26",
+    "vue-router": "^4.0.3",
+    "vue-waypoint": "^4.2.1"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.0",
