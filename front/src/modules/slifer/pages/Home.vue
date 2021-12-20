@@ -3,7 +3,7 @@
     <div
       class="flex lap:px-20 des:px-60 py-3 justify-between border-b border-gray-100 text-gray-400"
     >
-      <div>
+      <div class="mx-auto tab:mx-0">
         <a href="/">
           <img src="@/assets/img/ubyus.png" alt="ubyus" width="200" />
         </a>
@@ -42,7 +42,7 @@
       </Waypoint>
       <div class="flex flex-wrap center px-4 tab:px-20 des:px-60 py-5 justify-between">
         <div
-          class="w-full lap:w-1/2 des:w-1/2 tab:1/2 text-justify px-4 tab:px-10 des:px-40 des:text-xl"
+          class="w-full lap:w-1/2 des:w-1/2 tab:1/2 text-justify px-4 tab:px-10 des:px-10 ultra:px-40 des:text-xl"
         >
           <p v-if="lang == 'portugues'">
             UbyUS expressa o princípio de REPRESENTATIVIDADE, materializado por relações sinceras, profissionais e
@@ -67,7 +67,9 @@
             plural, inclusive and human world.
           </p>
         </div>
-        <div class="w-full tab:w-full lap:w-1/2 des:w-1/2 mt-2 ml-auto px-4 tab:px-20 des:px-60">
+        <div
+          class="w-full tab:w-full lap:w-1/2 des:w-1/2 mt-2 ml-auto px-4 tab:px-20 des:px-20 ultra:px-60"
+        >
           <img class="w-full" src="@/assets/img/imagem-equipe.jpg" />
         </div>
       </div>
