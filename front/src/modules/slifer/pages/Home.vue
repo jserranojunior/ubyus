@@ -1,7 +1,7 @@
 <template>
   <div class>
     <div
-      class="flex lap:px-20 des:px-60 py-3 justify-between border-b border-gray-100 text-gray-400"
+      class="flex lap:px-20 des:px-60 ult:px-96 py-3 justify-between border-b border-gray-100 text-gray-400"
     >
       <div class="mx-auto tab:mx-0">
         <a href="/">
@@ -40,9 +40,10 @@
         <span v-if="lang == 'portugues'">O que nos move</span>
         <span v-else>What Move Us</span>
       </Waypoint>
-      <div class="flex flex-wrap center px-4 tab:px-20 des:px-60 py-5 justify-between">
+      <div class="flex flex-wrap center py-5 justify-between px-4 tab:px-20 des:px-60 ult:px-56">
+        <!-- px-4 tab:px-10 des:px-10 ult:px-56 -->
         <div
-          class="w-full lap:w-1/2 des:w-1/2 tab:1/2 text-justify px-4 tab:px-10 des:px-10 ultra:px-40 des:text-xl"
+          class="w-full lap:w-1/2 des:w-1/2 tab:w-1/2 text-justify des:text-xl px-4 tab:px-20 des:px-32 ult:px-56"
         >
           <p v-if="lang == 'portugues'">
             UbyUS expressa o princípio de REPRESENTATIVIDADE, materializado por relações sinceras, profissionais e
@@ -68,10 +69,11 @@
           </p>
         </div>
         <div
-          class="w-full tab:w-full lap:w-1/2 des:w-1/2 mt-2 ml-auto px-4 tab:px-20 des:px-20 ultra:px-60"
+          class="w-full lap:w-1/2 des:w-1/2 tab:w-1/2 text-justify des:text-xl px-4 tab:px-20 des:px-32 ult:px-56"
         >
-          <img class="w-full" src="@/assets/img/imagem-equipe.jpg" />
+          <img class="object-contain h-full mx-auto" src="@/assets/img/imagem-equipe.jpg" />
         </div>
+        <!-- w-full tab:w-full lap:w-1/2 des:w-1/2 mt-2 ml-auto px-4 tab:px-20 des:px-20 ult:px-60 -->
       </div>
     </section>
     <!--   -->
@@ -114,137 +116,167 @@
           <span v-else>Centers of Excellence</span>
         </Waypoint>
 
-        <div class="flex center">
+        <div class="flex center lap:px-20 des:px-60 ult:px-80">
           <div
-            class="w-full text-center lap:text-left tab:w-full des:w-1/3 lap:w-1/2 px-4 tab:px-20 des:px-60"
+            class="w-full text-center lap:text-left tab:w-full des:w-1/3 lap:w-1/3 px-4 tab:px-20"
           >
-            <a href="#">
-              <img
-                v-if="lang == 'portugues'"
-                src="@/assets/img/negocios.png"
-                alt="negocios"
-                width="170"
-                class="tab:mx-auto"
-              />
-              <img v-else src="@/assets/img/english/businessboton.png" alt="negocios" width="170" />
-            </a>
+            <div class="pl-20">
+              <a href="#">
+                <img
+                  v-if="lang == 'portugues'"
+                  src="@/assets/img/negocios.png"
+                  alt="negocios"
+                  class="pl-20"
+                  width="260"
+                />
+                <img
+                  v-else
+                  src="@/assets/img/english/businessboton.png"
+                  class="pl-20"
+                  alt="negocios"
+                  width="260"
+                />
+              </a>
 
-            <p class="my-1">
-              <span v-if="lang == 'portugues'">
-                Fusões e
-                Aquisições
-                (M&A)
-              </span>
-              <span v-else>Mergers and Acquisitions (M&A)</span>
-            </p>
+              <div class="pl-20">
+                <p class="my-1">
+                  <span v-if="lang == 'portugues'">
+                    Fusões e
+                    Aquisições
+                    (M&A)
+                  </span>
+                  <span v-else>Mergers and Acquisitions (M&A)</span>
+                </p>
 
-            <p class="my-5">
-              <span v-if="lang == 'portugues'">
-                Estruturação de
-                Negócios
-              </span>
-              <span v-else>Business Structuring</span>
-            </p>
+                <p class="my-5">
+                  <span v-if="lang == 'portugues'">
+                    Estruturação de
+                    Negócios
+                  </span>
+                  <span v-else>Business Structuring</span>
+                </p>
 
-            <p class="my-5">
-              <span v-if="lang == 'portugues'">Turnaround</span>
-              <span v-else>Turnaround</span>
-            </p>
+                <p class="my-5">
+                  <span v-if="lang == 'portugues'">Turnaround</span>
+                  <span v-else>Turnaround</span>
+                </p>
 
-            <p class="my-5">
-              <span v-if="lang == 'portugues'">
-                Eficiência em
-                Processos e
-                Custos
-              </span>
-              <span v-else>Process & Cost Efficiency</span>
-            </p>
+                <p class="my-5">
+                  <span v-if="lang == 'portugues'">
+                    Eficiência em
+                    Processos e
+                    Custos
+                  </span>
+                  <span v-else>Process & Cost Efficiency</span>
+                </p>
 
-            <p class="my-5">
-              <span v-if="lang == 'portugues'">
-                Planejamento
-                Estratégico
-              </span>
-              <span v-else>Strategic Planning</span>
-            </p>
+                <p class="my-5">
+                  <span v-if="lang == 'portugues'">
+                    Planejamento
+                    Estratégico
+                  </span>
+                  <span v-else>Strategic Planning</span>
+                </p>
 
-            <p class="my-5">
-              <span v-if="lang == 'portugues'">
-                Avaliação de
-                Empresas
-              </span>
-              <span v-else>Company Valuation</span>
-            </p>
+                <p class="my-5">
+                  <span v-if="lang == 'portugues'">
+                    Avaliação de
+                    Empresas
+                  </span>
+                  <span v-else>Company Valuation</span>
+                </p>
+              </div>
+            </div>
           </div>
 
           <div
-            class="w-full text-center lap:text-left tab:w-full des:w-1/3 lap:w-1/2 px-4 tab:px-20 des:px-60"
+            class="w-full text-center lap:text-left tab:w-full des:w-1/3 lap:w-1/3 px-4 tab:px-20"
           >
-            <a href="#">
-              <img
-                v-if="lang == 'portugues'"
-                src="@/assets/img/governanca.png"
-                alt="governanca"
-                class="tab:mx-auto"
-                width="210"
-              />
-              <img v-else src="@/assets/img/english/governance.png" alt="governanca" width="210" />
-            </a>
+            <div class="pl-20">
+              <a href="#">
+                <img
+                  v-if="lang == 'portugues'"
+                  src="@/assets/img/governanca.png"
+                  alt="governanca"
+                  class="pl-20"
+                  width="280"
+                />
+                <img
+                  v-else
+                  src="@/assets/img/english/governance.png"
+                  class="pl-20"
+                  alt="governanca"
+                  width="280"
+                />
+              </a>
 
-            <p class="my-3">
-              <span v-if="lang == 'portugues'">Ambiental, Social e Governança (ESG)</span>
-              <span v-else>Environmental, Social and Governance (ESG)</span>
-            </p>
+              <div class="pl-20">
+                <p class="my-3">
+                  <span v-if="lang == 'portugues'">Ambiental, Social e Governança (ESG)</span>
+                  <span v-else>Environmental, Social and Governance (ESG)</span>
+                </p>
 
-            <p class="my-5">
-              <span v-if="lang == 'portugues'">Conselho</span>
-              <span v-else>Board</span>
-            </p>
+                <p class="my-5">
+                  <span v-if="lang == 'portugues'">Conselho</span>
+                  <span v-else>Board</span>
+                </p>
 
-            <p class="my-5">
-              <span v-if="lang == 'portugues'">Estrutura de Governança</span>
-              <span v-else>Governance Structure</span>
-            </p>
+                <p class="my-5">
+                  <span v-if="lang == 'portugues'">Estrutura de Governança</span>
+                  <span v-else>Governance Structure</span>
+                </p>
 
-            <p class="my-5">
-              <span v-if="lang == 'portugues'">Gestão de Crise</span>
-              <span v-else>Crisis Management</span>
-            </p>
+                <p class="my-5">
+                  <span v-if="lang == 'portugues'">Gestão de Crise</span>
+                  <span v-else>Crisis Management</span>
+                </p>
+              </div>
+            </div>
           </div>
 
           <div
-            class="w-full text-center lap:text-left tab:w-full des:w-1/3 lap:w-1/2 px-4 tab:px-20 des:px-60"
+            class="w-full text-center lap:text-left tab:w-full des:w-1/3 lap:w-1/3 px-4 tab:px-20"
           >
-            <a href="#">
-              <img
-                v-if="lang == 'portugues'"
-                src="@/assets/img/pessoas.png"
-                alt="pessoas"
-                class="mx-auto"
-                width="160"
-              />
-              <img v-else src="@/assets/img/english/people.png" alt="pessoas" width="160" />
-            </a>
+            <div class="pl-20">
+              <a href="#">
+                <img
+                  v-if="lang == 'portugues'"
+                  src="@/assets/img/pessoas.png"
+                  alt="pessoas"
+                  class="pl-20"
+                  width="250"
+                />
+                <img
+                  v-else
+                  src="@/assets/img/english/people.png"
+                  class="pl-20"
+                  alt="pessoas"
+                  width="250"
+                />
+              </a>
 
-            <p>
-              <span v-if="lang == 'portugues'">Recursos Humanos</span>
-              <span v-else>Human Resources</span>
-            </p>
+              <div class="mx-auto pl-20">
+                <p class>
+                  <span v-if="lang == 'portugues'">Recursos Humanos</span>
+                  <span v-else>Human Resources</span>
+                </p>
 
-            <p class="my-5">
-              <span v-if="lang == 'portugues'">Relações Sindicais e Trabalhistas</span>
-              <span v-else>Labor and Union Relations</span>
-            </p>
+                <p class="my-5">
+                  <span v-if="lang == 'portugues'">Relações Sindicais e Trabalhistas</span>
+                  <span v-else>Labor and Union Relations</span>
+                </p>
 
-            <p class="my-5">
-              <span v-if="lang == 'portugues'">Cultura Organizacional</span>
-              <span v-else>Organizational Culture</span>
-            </p>
+                <p class="my-5">
+                  <span v-if="lang == 'portugues'">Cultura Organizacional</span>
+                  <span v-else>Organizational Culture</span>
+                </p>
 
-            <p class="my-5">
-              <span v-if="lang == 'portugues'">Desenvolvimento de Pessoas</span>
-              <span v-else>People Development</span>
-            </p>
+                <p class="my-5">
+                  <span v-if="lang == 'portugues'">Desenvolvimento de Pessoas</span>
+                  <span v-else>People Development</span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
