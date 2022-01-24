@@ -115,30 +115,30 @@
           <span v-if="lang == 'portugues'">Centros de excelência</span>
           <span v-else>Centers of Excellence</span>
         </Waypoint>
-
-        <div class="flex center lap:px-20 des:px-60 ult:px-80">
+        <!-- center tab:w-full lap:px-20 des:px-60 ult:px-80 -->
+        <div class="flex">
           <div
-            class="w-full text-center lap:text-left tab:w-full des:w-1/3 lap:w-1/3 px-4 tab:px-20"
+            class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-20"
           >
-            <div class="pl-20">
+            <div class>
               <a href="#">
                 <img
                   v-if="lang == 'portugues'"
                   src="@/assets/img/negocios.png"
                   alt="negocios"
-                  class="pl-20"
-                  width="260"
+                  class="tab:mx-auto lap:mx-0"
+                  width="160"
                 />
                 <img
                   v-else
                   src="@/assets/img/english/businessboton.png"
-                  class="pl-20"
+                  class="tab:mx-auto lap:mx-0"
                   alt="negocios"
-                  width="260"
+                  width="160"
                 />
               </a>
 
-              <div class="pl-20">
+              <div class>
                 <p class="my-1">
                   <span v-if="lang == 'portugues'">
                     Fusões e
@@ -190,27 +190,27 @@
           </div>
 
           <div
-            class="w-full text-center lap:text-left tab:w-full des:w-1/3 lap:w-1/3 px-4 tab:px-20"
+            class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-20"
           >
-            <div class="pl-20">
+            <div class>
               <a href="#">
                 <img
                   v-if="lang == 'portugues'"
                   src="@/assets/img/governanca.png"
                   alt="governanca"
-                  class="pl-20"
-                  width="280"
+                  class="tab:mx-auto lap:mx-0"
+                  width="180"
                 />
                 <img
                   v-else
                   src="@/assets/img/english/governance.png"
-                  class="pl-20"
+                  class="tab:mx-auto lap:mx-0"
                   alt="governanca"
-                  width="280"
+                  width="180"
                 />
               </a>
 
-              <div class="pl-20">
+              <div>
                 <p class="my-3">
                   <span v-if="lang == 'portugues'">Ambiental, Social e Governança (ESG)</span>
                   <span v-else>Environmental, Social and Governance (ESG)</span>
@@ -235,27 +235,27 @@
           </div>
 
           <div
-            class="w-full text-center lap:text-left tab:w-full des:w-1/3 lap:w-1/3 px-4 tab:px-20"
+            class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-20"
           >
-            <div class="pl-20">
+            <div class>
               <a href="#">
                 <img
                   v-if="lang == 'portugues'"
                   src="@/assets/img/pessoas.png"
                   alt="pessoas"
-                  class="pl-20"
-                  width="250"
+                  class="tab:mx-auto lap:mx-0"
+                  width="140"
                 />
                 <img
                   v-else
                   src="@/assets/img/english/people.png"
-                  class="pl-20"
+                  class="tab:mx-auto lap:mx-0"
                   alt="pessoas"
-                  width="250"
+                  width="140"
                 />
               </a>
 
-              <div class="mx-auto pl-20">
+              <div>
                 <p class>
                   <span v-if="lang == 'portugues'">Recursos Humanos</span>
                   <span v-else>Human Resources</span>
@@ -428,7 +428,7 @@
         </Waypoint>
 
         <div class="flex justify-center tab:justify-between px-2 tab:px-56 des:px-96 des:text-xl">
-          <div class="text-center mb-4 w-full des:w-1/3">
+          <div class="text-center mb-4 w-full lap:w-1/3">
             <div class>
               <a href="#">
                 <img class="mx-auto" src="@/assets/img/Joao.png" alt="João" width="250px" />
@@ -437,7 +437,7 @@
             <span class="text-xl text-gray-600 font-bold">João Rached</span>
           </div>
 
-          <div class="text-center mb-4 w-full des:w-1/3">
+          <div class="text-center mb-4 w-full lap:w-1/3">
             <div class>
               <a href="#">
                 <img class="mx-auto" src="@/assets/img/eduardo.png" alt="Eduardo" width="230px" />
@@ -446,7 +446,7 @@
             <span class="text-xl text-gray-600 font-bold">Eduardo Beadle</span>
           </div>
 
-          <div class="text-center mb-4 w-full des:w-1/3">
+          <div class="text-center mb-4 w-full lap:w-1/3">
             <div class>
               <a href="#">
                 <img class="mx-auto" src="@/assets/img/Nilton.png" alt="Nilton" width="225px" />
