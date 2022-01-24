@@ -118,7 +118,7 @@
         <!-- center tab:w-full lap:px-20 des:px-60 ult:px-80 -->
         <div class="flex">
           <div
-            class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-20"
+            class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-20 des:px-60 ult:px-72"
           >
             <div class>
               <a href="#">
@@ -190,7 +190,7 @@
           </div>
 
           <div
-            class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-20"
+            class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-20 des:px-60 ult:px-72"
           >
             <div class>
               <a href="#">
@@ -235,7 +235,7 @@
           </div>
 
           <div
-            class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-20"
+            class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-20 des:px-60 ult:px-72"
           >
             <div class>
               <a href="#">
@@ -244,14 +244,14 @@
                   src="@/assets/img/pessoas.png"
                   alt="pessoas"
                   class="tab:mx-auto lap:mx-0"
-                  width="140"
+                  width="160"
                 />
                 <img
                   v-else
                   src="@/assets/img/english/people.png"
                   class="tab:mx-auto lap:mx-0"
                   alt="pessoas"
-                  width="140"
+                  width="160"
                 />
               </a>
 
