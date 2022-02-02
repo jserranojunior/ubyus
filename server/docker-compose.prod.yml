@@ -1,0 +1,21 @@
+version: "3.1"
+
+networks:
+  stack_ponte:
+    external: true
+
+services:
+  frontubyus:
+    image: php:5.6-apache
+    container_name: php
+    restart: always
+    ports:
+      - "807:80"
+    networks:
+      - stack_ponte
+    volumes:
+      - "${PATHPESSOAL}/ubyus/front/dist:/var/www/html"
+    labels:
+      - "traefik.enable=true"
+      - traefik.http.routers.ubyus.rule=Host(`ubyus.${DOMAIN}`)
+      - traefik.http.services.ubyus.loadbalancer.server.port=80

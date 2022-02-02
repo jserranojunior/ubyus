@@ -112,16 +112,15 @@
 
           <div class="flex justify-around">
             <div
-              class="w-full tab:w-full des:w-1/4 lap:w-1/4 tab:text-center lap:text-justify lap:pl-9"
+              class="w-full tab:w-full des:w-1/4 lap:w-1/3 tab:text-center lap:text-justify lap:pl-16 des:pl-7"
             >
               <div class>
                 <a href="#">
                   <img
                     v-if="lang == 'portugues'"
-                    src="@/assets/img/negocios.png"
+                    src="@/assets/img/entregamos/pt/negocios.png"
                     alt="negocios"
                     class="tab:mx-auto lap:mx-0"
-                    width="160"
                   />
                   <img
                     v-else
@@ -133,7 +132,7 @@
                 </a>
 
                 <div class>
-                  <p class="my-1">
+                  <p class="my-5">
                     <span v-if="lang == 'portugues'">
                       Fusões e
                       Aquisições
@@ -184,16 +183,15 @@
             </div>
 
             <div
-              class="w-full tab:w-full des:w-1/4 lap:w-1/4 tab:text-center lap:text-justify lap:pl-8"
+              class="w-full tab:w-full des:w-1/4 lap:w-1/3 tab:text-center lap:text-justify lap:pl-16 des:pl-7"
             >
               <div class>
                 <a href="#">
                   <img
                     v-if="lang == 'portugues'"
-                    src="@/assets/img/governanca.png"
+                    src="@/assets/img/entregamos/pt/governanca.png"
                     alt="governanca"
                     class="tab:mx-auto lap:mx-0"
-                    width="180"
                   />
                   <img
                     v-else
@@ -205,7 +203,7 @@
                 </a>
 
                 <div>
-                  <p class="my-3">
+                  <p class="my-5">
                     <span v-if="lang == 'portugues'">Ambiental, Social e Governança (ESG)</span>
                     <span v-else>Environmental, Social and Governance (ESG)</span>
                   </p>
@@ -228,15 +226,16 @@
               </div>
             </div>
 
-            <div class="w-full tab:w-full des:w-1/4 lap:w-1/4 tab:text-center lap:text-justify">
+            <div
+              class="w-full tab:w-full des:w-1/4 lap:w-1/3 tab:text-center lap:text-justify lap:pl-16 des:pl-7"
+            >
               <div class="text-justify">
                 <a href="#">
                   <img
                     v-if="lang == 'portugues'"
-                    src="@/assets/img/pessoas.png"
+                    src="@/assets/img/entregamos/pt/pessoas.png"
                     alt="pessoas"
                     class="tab:mx-auto lap:mx-0"
-                    width="160"
                   />
                   <img
                     v-else
@@ -248,7 +247,7 @@
                 </a>
 
                 <div>
-                  <p class="bg-green-600">
+                  <p class="my-5">
                     <span v-if="lang == 'portugues'">Recursos Humanos</span>
                     <span v-else>Human Resources</span>
                   </p>
