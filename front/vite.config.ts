@@ -27,6 +27,22 @@ export default ({ command }) => {
         hmr: { host: "localhost", port: 3000 },
       },
     };
+  }else if (command === "build") {
+    return {
+      plugins: [vue()],
+      resolve: {
+        alias: [{ find: "@", replacement: "/src" }],
+      },
+      build: {
+        chunkSizeWarningLimit: 2000,
+      },
+      server: {
+        host: "0.0.0.0",
+        port: 5500,
+      },
+      publicPath:"wp-content/themes/dist/",
+      base:"wp-content/themes/dist/"
+    };
   } else {
     return {
       plugins: [vue()],
@@ -35,12 +51,13 @@ export default ({ command }) => {
       },
       server: {
         host: "0.0.0.0",
-        port: 5000,
+        port: 5600,
         https: true,
         hmr: { host: "slifer.alvitre.com.br", port: 443 },
       },
       build: {
         chunkSizeWarningLimit: 2000,
+        base: "./"
       },
     };
   }
