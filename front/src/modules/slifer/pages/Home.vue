@@ -124,10 +124,9 @@
                   />
                   <img
                     v-else
-                    src="@/assets/img/english/businessboton.png"
+                    src="@/assets/img/entregamos/us/business.png"
                     class="tab:mx-auto lap:mx-0"
                     alt="negocios"
-                    width="160"
                   />
                 </a>
 
@@ -195,10 +194,9 @@
                   />
                   <img
                     v-else
-                    src="@/assets/img/english/governance.png"
+                    src="@/assets/img/entregamos/us/governance.png"
                     class="tab:mx-auto lap:mx-0"
                     alt="governanca"
-                    width="180"
                   />
                 </a>
 
@@ -239,10 +237,9 @@
                   />
                   <img
                     v-else
-                    src="@/assets/img/english/people.png"
+                    src="@/assets/img/entregamos/us/people.png"
                     class="tab:mx-auto lap:mx-0"
                     alt="pessoas"
-                    width="160"
                   />
                 </a>
 
