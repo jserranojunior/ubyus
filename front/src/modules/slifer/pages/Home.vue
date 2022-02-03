@@ -42,7 +42,7 @@
         <div class="flex flex-wrap center py-5 justify-between">
           <!-- px-4 tab:px-10 des:px-10 ult:px-56 -->
           <!-- des:text-xl px-4 tab:px-20 des:px-32 ult:px-20 -->
-          <div class="w-full lap:w-1/2 des:w-1/2 tab:w-1/2 text-justify px-5">
+          <div class="w-full lap:w-1/2 des:w-1/2 tab:w-1/2 text-justify px-5 des:text-lg">
             <p v-if="lang == 'portugues'">
               UbyUS expressa o princípio de REPRESENTATIVIDADE, materializado por relações sinceras, profissionais e
               perenes com nossos clientes.
@@ -84,12 +84,12 @@
             <span v-else>What we deliver</span>
           </Waypoint>
 
-          <p v-if="lang == 'portugues'" class="text-center mb-10">
+          <p v-if="lang == 'portugues'" class="text-center mb-10 des:text-lg">
             Esses são nossos Centros de Excelência, com atuação junto a clientes do
             <br />mercado financeiro, tecnologia, indústria, saúde,
             <br />varejo, infraestrutura, dentre outros.
           </p>
-          <p v-else class="text-center mb-10">
+          <p v-else class="text-center mb-10 des:text-lg">
             These are our Centers of Excellence, working with clients in
             <br />the financial market, technology,
             industry, health,
@@ -113,9 +113,9 @@
 
           <div class="flex justify-around">
             <div
-              class="w-full tab:w-full des:w-1/4 lap:w-1/3 tab:text-center lap:text-justify lap:pl-16 des:pl-7"
+              class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-16 des:pl-20"
             >
-              <div class>
+              <div>
                 <a href="#">
                   <img
                     v-if="lang == 'portugues'"
@@ -131,7 +131,7 @@
                   />
                 </a>
 
-                <div class>
+                <div class="des:text-lg">
                   <p class="my-5">
                     <span v-if="lang == 'portugues'">
                       Fusões e
@@ -183,7 +183,7 @@
             </div>
 
             <div
-              class="w-full tab:w-full des:w-1/4 lap:w-1/3 tab:text-center lap:text-justify lap:pl-16 des:pl-7"
+              class="w-full tab:w-full lap:w-1/3 des:w-1/3 tab:text-center lap:text-justify lap:pl-16 des:pl-20"
             >
               <div class>
                 <a href="#">
@@ -201,7 +201,7 @@
                   />
                 </a>
 
-                <div>
+                <div class="des:text-lg">
                   <p class="my-5">
                     <span v-if="lang == 'portugues'">Ambiental, Social e Governança (ESG)</span>
                     <span v-else>Environmental, Social and Governance (ESG)</span>
@@ -226,9 +226,9 @@
             </div>
 
             <div
-              class="w-full tab:w-full des:w-1/4 lap:w-1/3 tab:text-center lap:text-justify lap:pl-16 des:pl-7"
+              class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-16 des:pl-20"
             >
-              <div class="text-justify">
+              <div>
                 <a href="#">
                   <img
                     v-if="lang == 'portugues'"
@@ -244,7 +244,7 @@
                   />
                 </a>
 
-                <div>
+                <div class="des:text-lg">
                   <p class="my-5">
                     <span v-if="lang == 'portugues'">Recursos Humanos</span>
                     <span v-else>Human Resources</span>
@@ -385,7 +385,7 @@
             </ul>
           </div>
 
-          <div class="rodape2 px-20 text-justify lap:px-40 des:text-xl mb-10 mt-20">
+          <div class="rodape2 px-20 text-justify lap:px-40 des:text-lg mb-10 mt-20">
             <p v-if="lang == 'portugues'">
               Na UbyUS Advisors reunimos as diferentes competências obtidas ao longo de nossas histórias e as aplicamos em
               nossas soluções. Contudo, muito além das nossas histórias, habilidades e competências, o que nos importa é
@@ -465,7 +465,7 @@
 
           <div class="cx-form flex justify-center">
             <div class="w-full tab:w-full lap:w-1/3 tab-1/3">
-              <div class="flex">
+              <div class="flex des:text-lg">
                 <label for="nome" class="label-tail text-left">
                   <span v-if="lang == 'portugues'">Nome</span>
                   <span v-else>Name</span>
@@ -584,7 +584,7 @@
   <div class="flex justify-center bg-gray-600">
     <div class="w-full tab:w-10/12 lap:w-10/12 des:w-8/12 ult:w-1/2">
       <div class="py-5 text-white px-4">
-        <div class="flex justify-between my-5">
+        <div class="flex justify-between my-5 des:text-lg">
           <div class="w-full lap:w-1/3 text-center">
             <p>
               Avenida Dr. Chucri Zaidan, 1550 – cj. 1508
