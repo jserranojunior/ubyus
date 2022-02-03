@@ -1,6 +1,7 @@
 <template>
   <div class="flex bg-white justify-center">
     <div class="w-full tab:w-10/12 lap:w-10/12 des:w-8/12 ult:w-1/2 bg-white">
+      <section id="home"></section>
       <div class="flex py-1 justify-between border-b border-gray-100 text-gray-400">
         <div class="mx-auto tab:mx-0">
           <a href="/">
@@ -573,10 +574,16 @@
       </section>
       <div class="flex justify-center">
         <div class="slogan justify-center bg-white mx-auto my-20">
-          <img src="@/assets/img/ubyus-mini.png" alt="ubyus" />
+          <a href="#home">
+            <img src="@/assets/img/ubyus-mini.png" alt="ubyus" />
+          </a>
         </div>
       </div>
-      <div class="bg-gray-600 py-5 text-white px-4">
+    </div>
+  </div>
+  <div class="flex justify-center bg-gray-600">
+    <div class="w-full tab:w-10/12 lap:w-10/12 des:w-8/12 ult:w-1/2">
+      <div class="py-5 text-white px-4">
         <div class="flex justify-between my-5">
           <div class="w-full lap:w-1/3 text-center">
             <p>

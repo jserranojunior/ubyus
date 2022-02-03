@@ -24,6 +24,7 @@ $mail->From = 'ubyusadvisors@gmail.com';
 $mail->FromName = 'Ubyus Contato';
 $mail->addAddress('contato@ubyusadvisors.com');
 
+
 $mail->isHTML(true); 
 
 $mail->Subject = 'E-mail enviado pelo site Ubyus';
