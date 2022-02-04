@@ -342,50 +342,102 @@
             </swiper>
           </div>
 
-          <div
-            class="rodape px-6 lap:px-40 text-sm lap:text-base des:text-xl mt-5 flex justify-evenly"
-          >
-            <span v-if="lang == 'portugues'" class="mx-1">• Experiência</span>
-            <span class="mx-1" v-else>• Experience</span>
+          <div class="rodape px-4 lap:px-20 text-sm lap:text-base des:text-xl mt-4">
+            <div class="text-center">
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Experiência
+              </span>
+              <span class="mx-1" v-else>
+                <span class="mr-1">•</span>Experience
+              </span>
 
-            <span v-if="lang == 'portugues'" class="mx-1">• Conhecimento</span>
-            <span v-else class="mx-1">• Knowledge</span>
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Conhecimento
+              </span>
+              <span v-else class="mx-1">
+                <span class="mr-1">•</span>Knowledge
+              </span>
 
-            <span v-if="lang == 'portugues'" class="mx-1">• Visão</span>
-            <span v-else class="mx-1">• Vision</span>
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Visão
+              </span>
+              <span v-else class="mx-1">
+                <span class="mr-1">•</span>Vision
+              </span>
 
-            <span v-if="lang == 'portugues'" class="mx-1">• Relacionamento</span>
-            <span v-else class="mx-1">• Relationship</span>
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Relacionamento
+              </span>
+              <span v-else class="mx-1">
+                <span class="mr-1">•</span>Relationship
+              </span>
 
-            <span v-if="lang == 'portugues'" class="mx-1">• Planning</span>
-            <span v-else class="mx-1">• Relationship</span>
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Planning
+              </span>
+              <span v-else class="mx-1">
+                <span class="mr-1">•</span>Relationship
+              </span>
 
-            <span v-if="lang == 'portugues'" class="mx-1">• Parceria</span>
-            <span v-else class="mx-1">• Partnership</span>
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Parceria
+              </span>
+              <span v-else class="mx-1">
+                <span class="mr-1">•</span>Partnership
+              </span>
 
-            <span v-if="lang == 'portugues'" class="mx-1">• Colaboração</span>
-            <span v-else class="mx-1">• Collaboration</span>
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Colaboração
+              </span>
+              <span v-else class="mx-1">
+                <span class="mr-1">•</span>Collaboration
+              </span>
 
-            <span v-if="lang == 'portugues'" class="mx-1">• Interlocução</span>
-            <span v-else class="mx-1">• Interlocution</span>
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Interlocução
+              </span>
+              <span v-else class="mx-1">
+                <span class="mr-1">•</span>Interlocution
+              </span>
 
-            <span v-if="lang == 'portugues'" class="mx-1">• Inovação</span>
-            <span v-else class="mx-1">• Innovation</span>
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Inovação
+              </span>
+              <span v-else class="mx-1">
+                <span class="mr-1">•</span>Innovation
+              </span>
 
-            <span v-if="lang == 'portugues'" class="mx-1">• Construção</span>
-            <span v-else class="mx-1">• Construction</span>
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Construção
+              </span>
+              <span v-else class="mx-1">
+                <span class="mr-1">•</span>Construction
+              </span>
 
-            <span v-if="lang == 'portugues'" class="mx-1">• Transformação</span>
-            <span v-else class="mx-1">• Transformation</span>
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Transformação
+              </span>
+              <span v-else class="mx-1">
+                <span class="mr-1">•</span>Transformation
+              </span>
 
-            <span v-if="lang == 'portugues'" class="mx-1">• Execução</span>
-            <span v-else class="mx-1">• Execution</span>
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Execução
+              </span>
+              <span v-else class="mx-1">
+                <span class="mr-1">•</span>Execution
+              </span>
 
-            <span v-if="lang == 'portugues'" class="mx-1">• Resultado</span>
-            <span v-else class="mx-1">• Results</span>
+              <span v-if="lang == 'portugues'" class="mx-1">
+                <span class="mr-1">•</span>Resultado
+              </span>
+              <span v-else class="mx-1">
+                <span class="mr-1">•</span>Results
+              </span>
+            </div>
           </div>
 
-          <div class="rodape2 px-6 text-justify lap:px-40 des:text-lg mb-10 mt-20">
+          <div class="rodape2 px-2 text-justify lap:px-20 des:text-lg mb-10 mt-20">
             <p v-if="lang == 'portugues'">
               Na UbyUS Advisors reunimos as diferentes competências obtidas ao longo de nossas histórias e as aplicamos em
               nossas soluções. Contudo, muito além das nossas histórias, habilidades e competências, o que nos importa é
