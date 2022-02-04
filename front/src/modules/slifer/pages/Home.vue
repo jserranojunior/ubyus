@@ -2,14 +2,21 @@
   <div class="flex bg-white justify-center">
     <div class="w-full tab:w-10/12 lap:w-10/12 des:w-8/12 ult:w-1/2 bg-white">
       <section id="home"></section>
-      <div class="flex py-1 justify-between border-b border-gray-100 text-gray-400">
-        <div class="mx-auto tab:mx-0">
+      <div class="flex py-1 justify-between border-b border-gray-100 text-gray-400 items-center">
+        <div class="mx-auto tab:mx-0 lap:w-auto tab:w-full">
           <a href="/">
-            <img src="@/assets/img/ubyus-mini.png" alt="ubyus" width="200" />
+            <img
+              class="tab:mx-auto lap:mx-0"
+              src="@/assets/img/ubyus-mini.png"
+              alt="ubyus"
+              width="200"
+            />
           </a>
         </div>
 
-        <Menu />
+        <div class="mx-auto tab:mx-0 lap:w-auto tab:w-full">
+          <Menu />
+        </div>
       </div>
       <div class="painelvideoDiv border border-gray-100 bg-gray-50">
         <div class="flex justify-center center">
