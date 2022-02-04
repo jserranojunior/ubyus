@@ -3,20 +3,13 @@
     <div class="w-full tab:w-10/12 lap:w-10/12 des:w-8/12 ult:w-1/2 bg-white">
       <section id="home"></section>
       <div class="flex py-1 justify-between border-b border-gray-100 text-gray-400 items-center">
-        <div class="mx-auto tab:mx-0 lap:w-auto tab:w-full">
-          <a href="/">
-            <img
-              class="tab:mx-auto lap:mx-0"
-              src="@/assets/img/ubyus-mini.png"
-              alt="ubyus"
-              width="200"
-            />
+        <div class="w-full mx-0 lap:w-auto lap:mx-auto">
+          <a href="#">
+            <img class="mx-auto" src="@/assets/img/ubyus-mini.png" alt="ubyus" width="200" />
           </a>
         </div>
 
-        <div class="mx-auto tab:mx-0 lap:w-auto tab:w-full">
-          <Menu />
-        </div>
+        <Menu />
       </div>
       <div class="painelvideoDiv border border-gray-100 bg-gray-50">
         <div class="flex justify-center center">
@@ -49,7 +42,7 @@
         <div class="flex flex-wrap center py-5 justify-between">
           <!-- px-4 tab:px-10 des:px-10 ult:px-56 -->
           <!-- des:text-xl px-4 tab:px-20 des:px-32 ult:px-20 -->
-          <div class="w-full lap:w-1/2 des:w-1/2 tab:w-1/2 text-justify px-5 des:text-lg">
+          <div class="w-full lap:w-1/2 des:w-1/2 text-justify px-5 des:text-lg">
             <p v-if="lang == 'portugues'">
               UbyUS expressa o princípio de REPRESENTATIVIDADE, materializado por relações sinceras, profissionais e
               perenes com nossos clientes.
@@ -73,7 +66,7 @@
               plural, inclusive and human world.
             </p>
           </div>
-          <div class="w-full lap:w-1/2 des:w-1/2 tab:w-1/2 text-justify px-5">
+          <div class="w-full mt-1 lap:w-1/2 des:w-1/2 text-justify px-5">
             <img class="object-contain h-full mx-auto" src="@/assets/img/imagem-equipe.jpg" />
           </div>
           <!-- w-full tab:w-full lap:w-1/2 des:w-1/2 mt-2 ml-auto px-4 tab:px-20 des:px-20 ult:px-60 -->
@@ -120,7 +113,7 @@
 
           <div class="flex justify-around">
             <div
-              class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-16 des:pl-20"
+              class="w-full tab:w-full des:w-1/3 lap:w-1/3 text-left pl-6 lap:text-justify lap:pl-16 des:pl-20"
             >
               <div>
                 <a href="#">
@@ -128,12 +121,12 @@
                     v-if="lang == 'portugues'"
                     src="@/assets/img/entregamos/pt/negocios.png"
                     alt="negocios"
-                    class="tab:mx-auto lap:mx-0"
+                    class="mx-0"
                   />
                   <img
                     v-else
                     src="@/assets/img/entregamos/us/business.png"
-                    class="tab:mx-auto lap:mx-0"
+                    class="mx-0"
                     alt="negocios"
                   />
                 </a>
@@ -190,7 +183,7 @@
             </div>
 
             <div
-              class="w-full tab:w-full lap:w-1/3 des:w-1/3 tab:text-center lap:text-justify lap:pl-16 des:pl-20"
+              class="w-full tab:w-full lap:w-1/3 des:w-1/3 text-left pl-6 lap:text-justify lap:pl-16 des:pl-20 mt-6"
             >
               <div class>
                 <a href="#">
@@ -198,12 +191,12 @@
                     v-if="lang == 'portugues'"
                     src="@/assets/img/entregamos/pt/governanca.png"
                     alt="governanca"
-                    class="tab:mx-auto lap:mx-0"
+                    class="mx-0"
                   />
                   <img
                     v-else
                     src="@/assets/img/entregamos/us/governance.png"
-                    class="tab:mx-auto lap:mx-0"
+                    class="mx-0"
                     alt="governanca"
                   />
                 </a>
@@ -233,7 +226,7 @@
             </div>
 
             <div
-              class="w-full tab:w-full des:w-1/3 lap:w-1/3 tab:text-center lap:text-justify lap:pl-16 des:pl-20"
+              class="w-full tab:w-full des:w-1/3 lap:w-1/3 text-left pl-6 lap:text-justify lap:pl-16 des:pl-20 mt-6"
             >
               <div>
                 <a href="#">
@@ -241,12 +234,12 @@
                     v-if="lang == 'portugues'"
                     src="@/assets/img/entregamos/pt/pessoas.png"
                     alt="pessoas"
-                    class="tab:mx-auto lap:mx-0"
+                    class="mx-0"
                   />
                   <img
                     v-else
                     src="@/assets/img/entregamos/us/people.png"
-                    class="tab:mx-auto lap:mx-0"
+                    class="mx-0"
                     alt="pessoas"
                   />
                 </a>
@@ -349,50 +342,50 @@
             </swiper>
           </div>
 
-          <div class="rodape px-2 lap:px-40 des:text-xl mt-5">
-            <ul class="flex">
-              <li v-if="lang == 'portugues'" class="mx-1">• Experiência</li>
-              <li class="mx-1" v-else>• Experience</li>
+          <div
+            class="rodape px-6 lap:px-40 text-sm lap:text-base des:text-xl mt-5 flex justify-evenly"
+          >
+            <span v-if="lang == 'portugues'" class="mx-1">• Experiência</span>
+            <span class="mx-1" v-else>• Experience</span>
 
-              <li v-if="lang == 'portugues'" class="mx-1">• Conhecimento</li>
-              <li v-else class="mx-1">• Knowledge</li>
+            <span v-if="lang == 'portugues'" class="mx-1">• Conhecimento</span>
+            <span v-else class="mx-1">• Knowledge</span>
 
-              <li v-if="lang == 'portugues'" class="mx-1">• Visão</li>
-              <li v-else class="mx-1">• Vision</li>
+            <span v-if="lang == 'portugues'" class="mx-1">• Visão</span>
+            <span v-else class="mx-1">• Vision</span>
 
-              <li v-if="lang == 'portugues'" class="mx-1">• Relacionamento</li>
-              <li v-else class="mx-1">• Relationship</li>
+            <span v-if="lang == 'portugues'" class="mx-1">• Relacionamento</span>
+            <span v-else class="mx-1">• Relationship</span>
 
-              <li v-if="lang == 'portugues'" class="mx-1">• Planning</li>
-              <li v-else class="mx-1">• Relationship</li>
+            <span v-if="lang == 'portugues'" class="mx-1">• Planning</span>
+            <span v-else class="mx-1">• Relationship</span>
 
-              <li v-if="lang == 'portugues'" class="mx-1">• Parceria</li>
-              <li v-else class="mx-1">• Partnership</li>
+            <span v-if="lang == 'portugues'" class="mx-1">• Parceria</span>
+            <span v-else class="mx-1">• Partnership</span>
 
-              <li v-if="lang == 'portugues'" class="mx-1">• Colaboração</li>
-              <li v-else class="mx-1">• Collaboration</li>
+            <span v-if="lang == 'portugues'" class="mx-1">• Colaboração</span>
+            <span v-else class="mx-1">• Collaboration</span>
 
-              <li v-if="lang == 'portugues'" class="mx-1">• Interlocução</li>
-              <li v-else class="mx-1">• Interlocution</li>
+            <span v-if="lang == 'portugues'" class="mx-1">• Interlocução</span>
+            <span v-else class="mx-1">• Interlocution</span>
 
-              <li v-if="lang == 'portugues'" class="mx-1">• Inovação</li>
-              <li v-else class="mx-1">• Innovation</li>
+            <span v-if="lang == 'portugues'" class="mx-1">• Inovação</span>
+            <span v-else class="mx-1">• Innovation</span>
 
-              <li v-if="lang == 'portugues'" class="mx-1">• Construção</li>
-              <li v-else class="mx-1">• Construction</li>
+            <span v-if="lang == 'portugues'" class="mx-1">• Construção</span>
+            <span v-else class="mx-1">• Construction</span>
 
-              <li v-if="lang == 'portugues'" class="mx-1">• Transformação</li>
-              <li v-else class="mx-1">• Transformation</li>
+            <span v-if="lang == 'portugues'" class="mx-1">• Transformação</span>
+            <span v-else class="mx-1">• Transformation</span>
 
-              <li v-if="lang == 'portugues'" class="mx-1">• Execução</li>
-              <li v-else class="mx-1">• Execution</li>
+            <span v-if="lang == 'portugues'" class="mx-1">• Execução</span>
+            <span v-else class="mx-1">• Execution</span>
 
-              <li v-if="lang == 'portugues'" class="mx-1">• Resultado</li>
-              <li v-else class="mx-1">• Results</li>
-            </ul>
+            <span v-if="lang == 'portugues'" class="mx-1">• Resultado</span>
+            <span v-else class="mx-1">• Results</span>
           </div>
 
-          <div class="rodape2 px-20 text-justify lap:px-40 des:text-lg mb-10 mt-20">
+          <div class="rodape2 px-6 text-justify lap:px-40 des:text-lg mb-10 mt-20">
             <p v-if="lang == 'portugues'">
               Na UbyUS Advisors reunimos as diferentes competências obtidas ao longo de nossas histórias e as aplicamos em
               nossas soluções. Contudo, muito além das nossas histórias, habilidades e competências, o que nos importa é
