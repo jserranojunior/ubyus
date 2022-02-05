@@ -5,7 +5,7 @@
       <div class="flex py-1 justify-between border-b border-gray-100 text-gray-400 items-center">
         <div class="w-full mx-0 lap:w-auto lap:mx-auto">
           <a href="#">
-            <img class="mx-auto" src="@/assets/img/ubyus-mini.png" alt="ubyus" width="200" />
+            <img class="mx-auto" src="@/assets/img/logo/logo.svg" alt="ubyus" width="200" />
           </a>
         </div>
 
@@ -627,7 +627,7 @@
       <div class="flex justify-center">
         <div class="slogan justify-center bg-white mx-auto my-20">
           <a href="#home">
-            <img src="@/assets/img/ubyus-mini.png" alt="ubyus" />
+            <img src="@/assets/img/logo/logo.svg" width="200" alt="ubyus" />
           </a>
         </div>
       </div>
