@@ -86,14 +86,18 @@
 
           <p v-if="lang == 'portugues'" class="text-center mb-10 des:text-lg">
             Esses são nossos Centros de Excelência, com atuação junto a clientes do
-            <br />mercado financeiro, tecnologia, indústria, saúde,
-            <br />varejo, infraestrutura, dentre outros.
+            <span
+              class="lap:block"
+            ></span>
+            mercado financeiro, tecnologia, indústria, saúde,
+            <span class="lap:block"></span>
+            varejo, infraestrutura, dentre outros.
           </p>
           <p v-else class="text-center mb-10 des:text-lg">
             These are our Centers of Excellence, working with clients in
-            <br />the financial market, technology,
+            <span class="lap:block"></span>the financial market, technology,
             industry, health,
-            <br />retail and infrastructure segments, among others.
+            <span class="lap:block"></span>retail and infrastructure segments, among others.
           </p>
         </div>
         <img src="@/assets/img/phone.png" width="100%" />
@@ -342,7 +346,9 @@
             </swiper>
           </div>
 
-          <div class="rodape px-4 lap:px-20 text-sm lap:text-base des:text-xl mt-4">
+          <div
+            class="rodape px-4 lap:px-20 text-sm lap:text-base des:text-xl mt-4 hidden tab:block"
+          >
             <div class="text-center">
               <span v-if="lang == 'portugues'" class="mx-1">
                 <span class="mr-1">•</span>Experiência
@@ -373,10 +379,10 @@
               </span>
 
               <span v-if="lang == 'portugues'" class="mx-1">
-                <span class="mr-1">•</span>Planning
+                <span class="mr-1">•</span>Planejamento
               </span>
               <span v-else class="mx-1">
-                <span class="mr-1">•</span>Relationship
+                <span class="mr-1">•</span>Planning
               </span>
 
               <span v-if="lang == 'portugues'" class="mx-1">
@@ -437,7 +443,122 @@
             </div>
           </div>
 
-          <div class="rodape2 px-2 text-justify lap:px-20 des:text-lg mb-10 mt-20">
+          <div
+            class="rodape text-sm px-1 tab:px-4 lap:px-20 lap:text-base des:text-xl mt-4 flex tab:hidden justify-between"
+          >
+            <div class>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Experiência
+                </span>
+                <span class="mx-1" v-else>
+                  <span class="mr-1">•</span>Experience
+                </span>
+              </div>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Relacionamento
+                </span>
+                <span v-else class="mx-1">
+                  <span class="mr-1">•</span>Relationship
+                </span>
+              </div>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Colaboração
+                </span>
+                <span v-else class="mx-1">
+                  <span class="mr-1">•</span>Collaboration
+                </span>
+              </div>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Construção
+                </span>
+                <span v-else class="mx-1">
+                  <span class="mr-1">•</span>Construction
+                </span>
+              </div>
+            </div>
+            <div class>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Conhecimento
+                </span>
+                <span v-else class="mx-1">
+                  <span class="mr-1">•</span>Knowledge
+                </span>
+              </div>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Planejamento
+                </span>
+                <span v-else class="mx-1">
+                  <span class="mr-1">•</span>Planning
+                </span>
+              </div>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Interlocução
+                </span>
+                <span v-else class="mx-1">
+                  <span class="mr-1">•</span>Interlocution
+                </span>
+              </div>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Transformação
+                </span>
+                <span v-else class="mx-1">
+                  <span class="mr-1">•</span>Transformation
+                </span>
+              </div>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Resultado
+                </span>
+                <span v-else class="mx-1">
+                  <span class="mr-1">•</span>Results
+                </span>
+              </div>
+            </div>
+            <div class>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Visão
+                </span>
+                <span v-else class="mx-1">
+                  <span class="mr-1">•</span>Vision
+                </span>
+              </div>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Parceria
+                </span>
+                <span v-else class="mx-1">
+                  <span class="mr-1">•</span>Partnership
+                </span>
+              </div>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Inovação
+                </span>
+                <span v-else class="mx-1">
+                  <span class="mr-1">•</span>Innovation
+                </span>
+              </div>
+              <div>
+                <span v-if="lang == 'portugues'" class="mx-1">
+                  <span class="mr-1">•</span>Execução
+                </span>
+                <span v-else class="mx-1">
+                  <span class="mr-1">•</span>Execution
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="rodape2 px-4 text-justify lap:px-20 des:text-lg mb-10 mt-12 tab:mt-20">
             <p v-if="lang == 'portugues'">
               Na UbyUS Advisors reunimos as diferentes competências obtidas ao longo de nossas histórias e as aplicamos em
               nossas soluções. Contudo, muito além das nossas histórias, habilidades e competências, o que nos importa é
