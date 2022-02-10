@@ -40,8 +40,8 @@ export default ({ command }) => {
         host: "0.0.0.0",
         port: 5500,
       },
-      publicPath:"wp-content/themes/dist/",
-      base:"wp-content/themes/dist/"
+      // publicPath:"wp-content/themes/dist/",
+      // base:"wp-content/themes/dist/"
     };
   }else {
     return {
