@@ -1,0 +1,11 @@
+Adicionar no build
+
+ // publicPath:"wp-content/themes/dist/",
+      // base:"wp-content/themes/dist/"
+
+      Corrigir no useEmail a rota
+          // const url = `https://ubyusadvisors.com/wp-content/themes/dist/back?name=${state.inputsEmail.name}&email=${state.inputsEmail.email}&message=${state.inputsEmail.message}`;
+
+alterar no index php 
+$mail->addAddress('contato@ubyusadvisors.com');
+$mail->From = 'ubyusadvisors@gmail.com';

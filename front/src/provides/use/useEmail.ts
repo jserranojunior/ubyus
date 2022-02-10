@@ -12,8 +12,8 @@ export const useEmail = () => {
 
   async function sendEmail() {
     state.statusSendmail = "enviandoEmail";
-    // const url = `https://ubyus.alvitre.com.br/back?name=${state.inputsEmail.name}&email=${state.inputsEmail.email}&message=${state.inputsEmail.message}`;
-    const url = `/wp-content/themes/dist/back?name=${state.inputsEmail.name}&email=${state.inputsEmail.email}&message=${state.inputsEmail.message}`;
+    // const url = `https://ubyusadvisors.com/wp-content/themes/dist/back?name=${state.inputsEmail.name}&email=${state.inputsEmail.email}&message=${state.inputsEmail.message}`;
+    const url = `https://ubyus.alvitre.com.br/back?name=${state.inputsEmail.name}&email=${state.inputsEmail.email}&message=${state.inputsEmail.message}`;
 
     axios
       .get(url)
@@ -30,7 +30,7 @@ export const useEmail = () => {
       .catch(function (error) {
         // handle error
         console.log(error);
-        state.statusSendmail = "erroAoEnviar";
+        state.statusSendmail = "erroAoEnviarEmail";
         return error;
       });
   }
