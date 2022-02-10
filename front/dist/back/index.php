@@ -1,6 +1,4 @@
 <?php
-header("Content-Security-Policy: script-src 'self'");
-
 require 'class.phpmailer.php';
 require 'class.smtp.php';
 require 'class.pop3.php';
