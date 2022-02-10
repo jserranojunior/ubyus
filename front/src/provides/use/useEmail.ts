@@ -2,7 +2,7 @@ import { reactive, toRefs } from "vue";
 import axios from "axios";
 
 const instance = axios.create({
-      baseURL: 'https://ubyus.alvitre.com.br',
+      baseURL: 'https://alvitre.com.br',
       
 });
 
