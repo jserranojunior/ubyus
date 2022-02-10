@@ -43,15 +43,14 @@ $mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true;                               
 $mail->Username = 'ubyusadvisors@gmail.com'; 
 $mail->Password = 'kllyoieiorrmyzif'; 
-$mail->SMTPSecure = 'ssl'; 
-$mail->Port = 465;  
+$mail->SMTPSecure = 'tls'; 
+$mail->Port = 587;  
 
-// $mail->From = 'ubyusadvisors@gmail.com';
-$mail->From = 'alvitreempresa@gmail.com';
+$mail->From = 'ubyusadvisors@gmail.com';
+$mail->addAddress('contato@ubyusadvisors.com');
+// $mail->From = 'alvitreempresa@gmail.com';
+// $mail->addAddress('jorgeserranojunior@gmail.com');
 $mail->FromName = 'Ubyus Contato';
-// $mail->addAddress('contato@ubyusadvisors.com');
-$mail->addAddress('jorgeserranojunior@gmail.com');
-
 
 $mail->isHTML(true); 
 
