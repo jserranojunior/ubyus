@@ -187,7 +187,7 @@
             </div>
 
             <div
-              class="w-full tab:w-full lap:w-1/3 des:w-1/3 text-left pl-6 lap:text-justify lap:pl-16 des:pl-20 mt-6"
+              class="w-full tab:w-full des:w-1/3 lap:w-1/3 text-left pl-6 lap:text-justify lap:pl-16 des:pl-20 mt-6 lap:mt-0"
             >
               <div class>
                 <a href="#">
@@ -230,7 +230,7 @@
             </div>
 
             <div
-              class="w-full tab:w-full des:w-1/3 lap:w-1/3 text-left pl-6 lap:text-justify lap:pl-16 des:pl-20 mt-6"
+              class="w-full tab:w-full des:w-1/3 lap:w-1/3 text-left pl-6 lap:text-justify lap:pl-16 des:pl-20 mt-6 lap:mt-0"
             >
               <div>
                 <a href="#">
