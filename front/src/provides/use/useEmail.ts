@@ -1,5 +1,12 @@
 import { reactive, toRefs } from "vue";
 import axios from "axios";
+
+const instance = axios.create({
+      baseURL: 'https://ubyus.alvitre.com.br',
+      
+});
+
+
 export const useEmail = () => {
   const state = reactive({
     inputsEmail: {
@@ -15,7 +22,7 @@ export const useEmail = () => {
     // const url = `https://ubyusadvisors.com/wp-content/themes/dist/back?name=${state.inputsEmail.name}&email=${state.inputsEmail.email}&message=${state.inputsEmail.message}`;
     const url = `/back?name=${state.inputsEmail.name}&email=${state.inputsEmail.email}&message=${state.inputsEmail.message}`;
 
-    axios
+    return instance
       .get(url)
       .then(function (response) {
         // handle success
