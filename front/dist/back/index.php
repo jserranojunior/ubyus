@@ -20,11 +20,11 @@ $mail->Password = 'kllyoieiorrmyzif';
 $mail->SMTPSecure = 'ssl'; 
 $mail->Port = 465;  
 
-$mail->From = 'ubyusadvisors@gmail.com';
-// $mail->From = 'alvitreempresa@gmail.com';
+// $mail->From = 'ubyusadvisors@gmail.com';
+$mail->From = 'alvitreempresa@gmail.com';
 $mail->FromName = 'Ubyus Contato';
-$mail->addAddress('contato@ubyusadvisors.com');
-// $mail->addAddress('jorgeserranojunior@gmail.com');
+// $mail->addAddress('contato@ubyusadvisors.com');
+$mail->addAddress('jorgeserranojunior@gmail.com');
 
 
 $mail->isHTML(true); 
