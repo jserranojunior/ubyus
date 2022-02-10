@@ -2,7 +2,7 @@ import { reactive, toRefs } from "vue";
 import axios from "axios";
 
 const instance = axios.create({
-      baseURL: 'https://alvitre.com.br',
+      baseURL: 'https://ubyus.alvitre.com.br',
       
 });
 
@@ -32,13 +32,13 @@ export const useEmail = () => {
         state.inputsEmail.email = "";
         state.inputsEmail.message = "";
 
-        return response;
+        return true;
       })
       .catch(function (error) {
         // handle error
         console.log(error);
         state.statusSendmail = "erroAoEnviarEmail";
-        return error;
+        return false;
       });
   }
 
