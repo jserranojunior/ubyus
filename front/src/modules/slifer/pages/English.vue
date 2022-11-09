@@ -281,7 +281,7 @@
 
       <p>
         Avenida Dr. Chucri Zaidan, 1550 – cj. 1508 – <br>
-        Vila São Francisco – São Paulo / SP – CEP <br>
+        Capital Corporate Office – São Paulo / SP – CEP <br>
         04711-130
       </p>
 

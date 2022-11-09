@@ -46,10 +46,10 @@ $mail->Password = 'kllyoieiorrmyzif';
 $mail->SMTPSecure = 'ssl'; 
 $mail->Port = 465;  
 
-$mail->From = 'ubyusadvisors@gmail.com';
-$mail->addAddress('contato@ubyusadvisors.com');
-// $mail->From = 'alvitreempresa@gmail.com';
-// $mail->addAddress('jorgeserranojunior@gmail.com');
+/* $mail->From = 'ubyusadvisors@gmail.com';
+$mail->addAddress('contato@ubyusadvisors.com'); */
+ $mail->From = 'alvitreempresa@gmail.com';
+ $mail->addAddress('jorgeserranojunior@gmail.com');
 $mail->FromName = 'Ubyus Contato';
 
 $mail->isHTML(true); 
